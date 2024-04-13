@@ -1,0 +1,133 @@
+@use './variaveis';
+
+.elenco {
+  &__title{
+  color: variaveis.$corTextoPrincipal;
+  }
+}
+
+.slide {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  gap: 80px;
+  color: variaveis.$corTextoPrincipal;
+  margin-top: 50px;
+
+  img{
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  a{
+    color: variaveis.$corTextoPrincipal;
+    text-align: center;
+    text-decoration: none;
+  }
+  a:hover {
+    color: yellow;
+  }
+}
+.btn__saiba_mais {
+  align-items: center;
+  color: variaveis.$corTextoPrincipal;
+  background-color: transparent;
+  border-color: transparent;
+  text-decoration:underline ;
+  font-size: 14px;
+  margin-bottom: 50px;
+  margin-top: 32px;
+  margin-left: 85%;
+  cursor: pointer;
+
+
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  .elenco {
+    &__title{
+    color: variaveis.$corTextoPrincipal;
+    }
+  }
+  
+  .slide {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    color: variaveis.$corTextoPrincipal;
+    margin-top: 50px;
+    margin-left: 0;
+  
+    img{
+      width: 200px;
+      height: 250px;
+      border-radius: 5px;
+    }
+    a{
+      color: variaveis.$corTextoPrincipal;
+      text-align: center;
+      text-decoration: none;
+    }
+    a:hover {
+      color: yellow;
+    }
+  }
+  .btn__saiba_mais {
+    
+    color: variaveis.$corTextoPrincipal;
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration:underline ;
+    font-size: 14px;
+    margin-bottom: 50px;
+    margin-top: 32px;
+    cursor: pointer;
+    margin-left: 50px; 
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .elenco {
+    
+    &__title{
+    color: variaveis.$corTextoPrincipal;
+    }
+  }
+  
+  .slide {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: 50px;
+    gap: 80px;
+    color: variaveis.$corTextoPrincipal;
+    margin-top: 50px;
+  
+    img{
+      width: 200px;
+      border-radius: 5px;
+    }
+    a{
+      color: variaveis.$corTextoPrincipal;
+      text-align: center;
+      text-decoration: none;
+    }
+    a:hover {
+      color: yellow;
+    }
+  }
+  .btn__saiba_mais {
+    color: variaveis.$corTextoPrincipal;
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration:underline ;
+    font-size: 14px;
+    margin-bottom: 50px;
+    margin-top: 32px;
+    cursor: pointer;
+    margin-left: 50px;
+  
+  
+    
+  }
+}

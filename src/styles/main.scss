@@ -1,0 +1,33 @@
+@use './hero';
+@use './variaveis';
+@use './sinopse';
+@use './header';
+@use './trailer';
+@use './slide';
+@use './footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    background-color: black;
+    
+}
+.container {
+    margin: 0 150px 0 150px;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 40px 0 40px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .container {
+        margin: 0 40px 0 40px;
+    }
+}  
+

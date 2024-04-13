@@ -1,0 +1,117 @@
+@use './variaveis';
+
+.hero {
+    width: 100%;
+    background-color: #000;
+    background-image: linear-gradient( to top, rgba(0, 0, 0, 3.0), rgba(0, 0, 0, 0.7)), url('https://thumbs.jusbr.com/imgs.jusbr.com/publications/images/8dc98aa968508b53d31f0e63502a15f2');
+    background-size: cover;
+    background-position: top center; 
+    border-color: #000;
+
+
+&__sinopse {
+    display: flex;
+    padding-top: 450px;
+    text-align: justify;
+    color: variaveis.$corTextoPrincipal;
+    
+    
+
+    img {
+     width: 250px;
+     padding: 10px;
+     margin-bottom: 50px;
+     border-radius: 5%;
+     border-color: black;
+    }
+    h2 {
+        margin-bottom: 15px;
+    }
+    a {
+        
+    }
+    #mais {
+        display: none;
+    }
+} 
+
+}
+ 
+@media screen and (max-width: 768px) {
+    .hero {
+        width: 100%;
+        background-color: #000;
+        background-image: linear-gradient( to top, rgba(0, 0, 0, 3.0), rgba(0, 0, 0, 0.7)), url('https://thumbs.jusbr.com/imgs.jusbr.com/publications/images/8dc98aa968508b53d31f0e63502a15f2');
+        background-size: cover;
+        background-position: top center; 
+        border-color: #000;
+        margin-bottom: 100px;
+
+        &__sinopse {
+            display: block;
+            color: variaveis.$corTextoPrincipal;
+            text-align: justify;
+            padding-top: 50px;
+            
+            
+        
+            img {
+             width: 200px;
+             padding: 10px;
+             margin-bottom: 50px;
+             border-radius: 5%;
+             border-color: black;
+            }
+            h2 {
+                margin-bottom: 15px;
+            }
+         
+            #mais {
+                display: none;
+            }
+        } 
+        
+        }
+    }  
+
+@media screen and (max-width: 426px) {
+    .hero {
+        width: 100%;
+    background-color: #000;
+    background-image: linear-gradient( to top, rgba(0, 0, 0, 3.0), rgba(0, 0, 0, 0.7)), url('https://thumbs.jusbr.com/imgs.jusbr.com/publications/images/8dc98aa968508b53d31f0e63502a15f2');
+    background-size: cover;
+    background-position: top center; 
+    border-color: #000;
+    margin-bottom: 100px;
+
+    &__sinopse {
+        display: block;
+        color: variaveis.$corTextoPrincipal;
+        text-align: justify;
+        padding-top: 50px;
+        
+        
+    
+        img {
+         width: 210px;
+         margin-bottom: 50px;
+         border-radius: 10%;
+         margin-left: 40px;
+        }
+        h2 {
+            margin-bottom: 15px;
+        }
+        #mais {
+            display: none;
+        }
+    } 
+    
+    }
+}  
+
+
+
+
+
+
+

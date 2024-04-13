@@ -1,0 +1,27 @@
+@use './variaveis';
+
+.trailer {
+    margin-top: 150px;
+
+    h2 {
+        color: variaveis.$corTextoPrincipal;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .trailer {
+        width: 50%;
+        margin-top: 150px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .trailer {
+        width: 50%;
+        margin-top: 150px;
+        display: none;
+    }
+}
